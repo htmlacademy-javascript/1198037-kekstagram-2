@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
-* Студент: [Елена Трубецкая](https://up.htmlacademy.ru/javascript-individual/2/user/1198037).
-* Наставник: `Неизвестно`.
+* Студент: [Елена Дубицкая](https://up.htmlacademy.ru/javascript-individual/2/user/1198037).
+* Наставник: `Артём Картавый`.
 
 ---
 

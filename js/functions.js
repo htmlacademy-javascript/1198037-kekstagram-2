@@ -6,7 +6,7 @@ function checkLength(string, maxLength) {
   return false;
 }
 
-function checkPalindrome(inputString) {
+function checkPalindrome(inputString = '') {
   let reversedString = '';
   let newString = inputString.replaceAll(' ', '');
   newString = newString.toLowerCase();
@@ -16,19 +16,16 @@ function checkPalindrome(inputString) {
   return newString === reversedString;
 }
 
-// function exportNumber(inputString) {
-//   let numberString = '';
-//   let char;
-//   for (let i = 0; i < inputString.length; i++) {
-//     if  (char = Number(inputString[i])) {
-//       numberString += char;
-//     }
-// console.log(numberString);
-//   }
-//     //= Math.abs(parseInt('ECMAScript 2022'));
-//   if (isNaN(numberString)) {
-//     return NaN;
-//   }
-//   return numberString;
-// }
+function exportNumber(inputString) {
+  let numberString = '';
+
+  for (let i = 0; i < inputString.length; i++) {
+    if (Number.isNaN(parseInt(inputString[i], 10)) === false) {
+      numberString += inputString[i];
+    }
+  }
+  //= Math.abs(parseInt('ECMAScript 2022'));
+
+  return numberString === '' ? NaN : Number(numberString);
+}
 

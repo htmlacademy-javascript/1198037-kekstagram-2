@@ -1,6 +1,3 @@
-// let string;
-// let maxLength;
-
 function checkLength(string, maxLength) {
   if (string.length <= maxLength) {
 

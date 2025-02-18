@@ -34,4 +34,4 @@ function checkPalindrome(inputString) {
 //   }
 //   return numberString;
 // }
-console.log(exportNumber('2023 год'));
+

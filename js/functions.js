@@ -1,14 +1,8 @@
-function checkLength(string, maxLength) {
-  if (string.length <= maxLength) {
+const checkLength = (string, maxLength) => string.length <= maxLength;
 
-    return true;
-  }
-  return false;
-}
-
-function checkPalindrome(inputString = '') {
+function checkPalindrome(string = '') {
   let reversedString = '';
-  let newString = inputString.replaceAll(' ', '');
+  let newString = string.replaceAll(' ', '');
   newString = newString.toLowerCase();
   for (let i = newString.length - 1; i >= 0; i--) {
     reversedString += newString.at(i);
@@ -16,16 +10,17 @@ function checkPalindrome(inputString = '') {
   return newString === reversedString;
 }
 
-function exportNumber(inputString) {
+function exportNumber(string) {
   let numberString = '';
 
-  for (let i = 0; i < inputString.length; i++) {
-    if (Number.isNaN(parseInt(inputString[i], 10)) === false) {
-      numberString += inputString[i];
+  for (let i = 0; i < string.length; i++) {
+    if (Number.isNaN(parseInt(string[i], 10)) === false) {
+      numberString += string[i];
     }
   }
-  //= Math.abs(parseInt('ECMAScript 2022'));
 
-  return numberString === '' ? NaN : Number(numberString);
+  return parseInt(numberString, 10);
 }
-
+checkPalindrome('sfsdf');
+exportNumber('20203 fsfsf');
+checkLength('20203 fsfsf');
